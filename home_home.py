@@ -29,11 +29,23 @@ def print_welcome():
 print_welcome()
 
 
-# The below function will print out the available options for garden decoration
+# The below function will print out the available options for garden decorations
 def print_garden_options():
     print("Garden Options: ")
     print(" 3 pack garden flower (p): $5.0 ")
     print(" Hanging light wire (l): $10.0 ")
     print(" garden bench (b): $35.0 ")
+    print(" None and Next (n): $0.0 ")
 
 print_garden_options()
+
+
+# The below function will print out the available options for indoor decorations
+def print_indoor_options():
+    print("Indoor Options: ")
+    print(" Small table lamp (t): $5.0 ")
+    print(" City picture frame (f): $7.0 ")
+    print(" 4x5 entry rug (r): $35.0 ")
+    print(" None and Next (n): $0.0 ")
+
+print_indoor_options()    
