@@ -70,7 +70,7 @@ def selected_items():
     selected_item = input()
     while selected_item is not "n":
         if selected_item == "G.O":
-            print_garden_options()
+         print_garden_options()
         elif selected_item == "p":
             price = garden_option["p"][1]
             print(" you added the 3 pack garden flower to the basket for $5.0", basket)
