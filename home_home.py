@@ -64,4 +64,24 @@ def select_options():
 select_options()
 
 
-
+# this function will allow selected items to be added to a basket and then have their price calculated
+def selected_items():
+    basket = 0
+    selected_item = input()
+    while selected_item is not "n":
+        if selected_item == "G.O":
+            print_garden_options()
+        elif selected_item == "p":
+            price = garden_option["p"][1]
+            print(" you added the 3 pack garden flower to the basket for $5.0", basket)
+            basket = basket + price
+        elif selected_item == "l":
+            price = garden_option["l"][1]
+            print("you added Hanging light wire to the basket for $10.0", basket)
+            basket = basket + price
+        elif selected_item == "b":
+            price = garden_option["b"][1]
+            print("you added garden bench to the basket for $35.0", basket)
+            basket = basket + price
+        print(basket + 50)
+        break
