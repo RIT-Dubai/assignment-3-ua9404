@@ -7,7 +7,7 @@ class Item:
         self.__code = code
         self.__price = 0
 
-class Home_Avatar:
+class Home_categories:
 # this class is used as the basket for shopping
     __slots__ = ['__garden_options', '__indoor_options', '__bathroom_options', '__base_service']
 
@@ -21,3 +21,9 @@ garden_option = {"p": ('3 pack garden flower', 5.0), "l": ('Hanging light wire',
 indoor_option = {"t": ('Small table lamp', 5.0), "f": ('City picture frame', 7.0), "r": ('4x5 entry rug', 35.0), "n": ('None and Next (n)', 0.0)}
 bathroom_option = {"w": ('Weighing scale', 2.0), "a": ('Towel', 3.0), "y": ('Brush holder', 6.0), "n": ('None and Next (n)', 0.0)}
 
+# The below function prints a welcome address to the users
+def print_welcome():
+    print("Welcome to Home Ideas Center, where all orders include a new home feeling!")
+    print("For your new Home space ... ")
+
+print_welcome()
