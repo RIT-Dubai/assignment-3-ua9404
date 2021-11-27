@@ -38,3 +38,17 @@ def test_selected_item():
     assert selected_item == "G.O"
     assert selected_item == "I.O"
     assert selected_item == "B.O"
+
+test_selected_item()
+
+
+# test to see if prices are totaled
+def test_price():
+    home_home.selected_items()
+    basket = 0
+    assert home_home.selected_items().price == home_home.garden_option["p"][1]
+    assert home_home.selected_items().price == home_home.indoor_option["t"][1]
+    assert home_home.selected_items().price == home_home.bathroom_option["w"][1]
+    assert home_home.selected_items().price == basket + home_home.selected_items().price
+
+test_price()
