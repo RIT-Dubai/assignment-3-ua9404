@@ -15,6 +15,6 @@ class Home_Avatar:
         self.__bathroom_options = bathroom_options
         self.__base_service = 50
 
-garden_option = {'3 pack garden flower (p)': 5.0, 'Hanging light wire (l)': 10.0, 'garden bench (b)': 35.0, 'None and Next (n)': 0.0}
-indoor_option = {'Small table lamp (t)': 5.0, 'City picture frame (f1)': 7.0, '4x5 entry rug (r)': 35.0, 'None and Next (n)': 0.0}
-bathroom_option = {'Weighing scale (w)': 2.0, 'Towel (a)': 3.0, 'Brush holder (y)': 6.0, 'None and Next': 0.0}
+garden_option = {"p": ('3 pack garden flower', 5.0), "l": ('Hanging light wire', 10.0), "b": ('garden bench', 35.0), "n": ('None and Next', 0.0)}
+indoor_option = {"t": ('Small table lamp', 5.0), "f": ('City picture frame', 7.0), "r": ('4x5 entry rug', 35.0), "n": ('None and Next (n)', 0.0)}
+bathroom_option = {"w": ('Weighing scale', 2.0), "a": ('Towel', 3.0), "y": ('Brush holder', 6.0), "n": ('None and Next (n)', 0.0)}
