@@ -85,3 +85,21 @@ def selected_items():
             basket = basket + price
         print(basket + 50)
         break
+
+    while selected_item is not "n":
+        if selected_item == "I.O":
+            print_indoor_options()
+        elif selected_item == "t":
+            price = indoor_option["t"][1]
+            print("you added Small table lamp to the basket for $5.0", basket)
+            basket = basket + price
+        elif selected_item == "f":
+            price = indoor_option["f"][1]
+            print("you added City picture frame to the basket for $7.0", basket)
+            basket = basket + price
+        elif selected_item == "r":
+            price = indoor_option["r"][1]
+            print("you added 4x5 entry rug to the basket for $35.0", basket)
+            basket = basket + price
+        print(basket + 50)
+        break
