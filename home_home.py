@@ -48,4 +48,15 @@ def print_indoor_options():
     print(" 4x5 entry rug (r): $35.0 ")
     print(" None and Next (n): $0.0 ")
 
-print_indoor_options()    
+print_indoor_options()
+
+
+# The below function will print out the available options for bathroom decorations
+def print_bathroom_options():
+    print("Bathroom Options: ")
+    print(" Weighing Scale (w): $2.0 ")
+    print(" Towel (a): $3.0 ")
+    print(" Brush Holder (y): $6.0 ")
+    print(" None and Next (n): $0.0 ")
+
+print_bathroom_options()
