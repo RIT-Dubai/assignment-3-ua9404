@@ -37,8 +37,6 @@ def print_garden_options():
     print(" garden bench (b): $35.0 ")
     print(" None and Next (n): $0.0 ")
 
-print_garden_options()
-
 
 # The below function will print out the available options for indoor decorations
 def print_indoor_options():
@@ -47,8 +45,6 @@ def print_indoor_options():
     print(" City picture frame (f): $7.0 ")
     print(" 4x5 entry rug (r): $35.0 ")
     print(" None and Next (n): $0.0 ")
-
-print_indoor_options()
 
 
 # The below function will print out the available options for bathroom decorations
@@ -59,4 +55,13 @@ def print_bathroom_options():
     print(" Brush Holder (y): $6.0 ")
     print(" None and Next (n): $0.0 ")
 
-print_bathroom_options()
+
+# This function will allow the user to input a command to select a home category
+def select_options():
+    print(" Use command to select category to shop: ")
+    print(" use 'G.O' for garden_options ", " use 'I.O for indoor_options ", " use 'B.O for bathroom_options")
+
+select_options()
+
+
+
