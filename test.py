@@ -1,6 +1,6 @@
-import home_home
 
-# This test will show if the garden options are printed corresponding to there item code
+
+# This test will show if the  garden item is printed according to there code
 def test_garden_options():
     assert "p" == '3 pack garden flower'
     assert "l" == 'Hanging light wire'
@@ -9,3 +9,12 @@ def test_garden_options():
 
 test_garden_options()
 
+
+# this test will show if the indoor item is printed according to there code
+def test_indoor_options():
+    assert "t" == 'Small table lamp'
+    assert "f" == 'City picture frame'
+    assert "r" == '4x5 entry rug'
+    assert "n" == 'None and Next'
+
+test_indoor_options()
