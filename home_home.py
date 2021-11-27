@@ -103,3 +103,19 @@ def selected_items():
             basket = basket + price
         print(basket + 50)
         break
+
+    while selected_item is not "n":
+        if selected_item == "B.O":
+           print_bathroom_options()
+        elif selected_item == "w":
+            price = bathroom_option["w"][1]
+            print("you added Weighing Scale to the basket for $2.0", basket)
+            basket = basket + price
+        elif selected_item == "a":
+            price = bathroom_option["a"][1]
+            print("you added Towel to the basket for $3.0", basket)
+            basket = basket + price
+        print(basket + 50)
+        break
+
+selected_items()
