@@ -1,5 +1,3 @@
-
-
 # This test will show if the  garden item is printed according to there code
 def test_garden_options():
     assert "p" == '3 pack garden flower'
@@ -18,3 +16,13 @@ def test_indoor_options():
     assert "n" == 'None and Next'
 
 test_indoor_options()
+
+
+# this test will show if the bathroom item is printed according to there code
+def test_bathroom_options():
+    assert "w" == 'Weighing scale'
+    assert "a" == 'Towel'
+    assert "y" == 'Brush holder'
+    assert "n" == "None and Next"
+
+test_bathroom_options()    
