@@ -65,7 +65,8 @@ select_options()
 
 
 # this function will allow selected items to be added to a basket and then have their price calculated
-def selected_items():
+def main():
+  def selected_items():
     basket = 0
     selected_item = input()
     while selected_item is not "n":
@@ -121,5 +122,7 @@ def selected_items():
             basket = basket + price
         print(basket + 50)
         break
+    selected_items()
 
-selected_items()
+
+main()
