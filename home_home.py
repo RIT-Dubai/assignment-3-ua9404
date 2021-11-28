@@ -8,7 +8,7 @@ class Item:
         self.__price = 0
 
 class Home_categories:
-# this class is used as the basket for shopping
+# this class is used as the basket for shopping also contains the dictionaries for each category
     __slots__ = ['__garden_options', '__indoor_options', '__bathroom_options', '__base_service']
 
     def __init__(self, garden_options, indoor_options, bathroom_options):
@@ -17,9 +17,9 @@ class Home_categories:
         self.__bathroom_options = bathroom_options
         self.__base_service = 50
 
-garden_option = {"p": 5.0, "l": 10.0, "b": 35.0, "n": 0.0}
-indoor_option = {"t": 5.0, "f": 7.0, "r": 35.0, "n": 0.0}
-bathroom_option = {"w": 2.0, "a": 3.0, "y": 6.0, "n": 0.0}
+    garden_option = {"p": 5.0, "l": 10.0, "b": 35.0, "n": 0.0}
+    indoor_option = {"t": 5.0, "f": 7.0, "r": 35.0, "n": 0.0}
+    bathroom_option = {"w": 2.0, "a": 3.0, "y": 6.0, "n": 0.0}
 
 # The below function prints a welcome address to the users
 def print_welcome():
@@ -72,15 +72,15 @@ def selected_items():
         if selected_item == "G.O":
          print_garden_options()
         elif selected_item == "p":
-            price = garden_option["p"]
+            price = Home_categories.garden_option["p"]
             print(" you added the 3 pack garden flower to the basket for $5.0", basket)
             basket = basket + price
         elif selected_item == "l":
-            price = garden_option["l"]
+            price = Home_categories.garden_option["l"]
             print("you added Hanging light wire to the basket for $10.0", basket)
             basket = basket + price
         elif selected_item == "b":
-            price = garden_option["b"]
+            price = Home_categories.garden_option["b"]
             print("you added garden bench to the basket for $35.0", basket)
             basket = basket + price
         print(basket + 50)
@@ -90,15 +90,15 @@ def selected_items():
         if selected_item == "I.O":
             print_indoor_options()
         elif selected_item == "t":
-            price = indoor_option["t"]
+            price = Home_categories.indoor_option["t"]
             print("you added Small table lamp to the basket for $5.0", basket)
             basket = basket + price
         elif selected_item == "f":
-            price = indoor_option["f"]
+            price = Home_categories.indoor_option["f"]
             print("you added City picture frame to the basket for $7.0", basket)
             basket = basket + price
         elif selected_item == "r":
-            price = indoor_option["r"]
+            price = Home_categories.indoor_option["r"]
             print("you added 4x5 entry rug to the basket for $35.0", basket)
             basket = basket + price
         print(basket + 50)
@@ -108,15 +108,15 @@ def selected_items():
         if selected_item == "B.O":
            print_bathroom_options()
         elif selected_item == "w":
-            price = bathroom_option["w"]
+            price = Home_categories.bathroom_option["w"]
             print("you added Weighing Scale to the basket for $2.0", basket)
             basket = basket + price
         elif selected_item == "a":
-            price = bathroom_option["a"]
+            price = Home_categories.bathroom_option["a"]
             print("you added Towel to the basket for $3.0", basket)
             basket = basket + price
         elif selected_item == "y":
-            price = bathroom_option["y"]
+            price = Home_categories.bathroom_option["y"]
             print("you added Brush Holder to the basket for $6.0", basket)
             basket = basket + price
         print(basket + 50)
